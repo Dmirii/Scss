@@ -110,4 +110,136 @@ h1, h2, h3, h4, h5, h6 {
 .google:hover {
   color: green;
 }
+
+.content {
+  width: 500px;
+  height: auto;
+  background-color: #000;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.screen {
+  -webkit-animation: colorPulse 5s infinite ease-in-out;
+          animation: colorPulse 5s infinite ease-in-out;
+  background-image: radial-gradient(#444, #111);
+  -webkit-box-shadow: 0 0 5vmin 1vmin #000 inset;
+          box-shadow: 0 0 5vmin 1vmin #000 inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fira Mono', monospace;
+  font-size: 20px;
+  overflow: hidden;
+  padding: 10vmin;
+}
+
+.screen:before {
+  -webkit-animation: wave 10s infinite ease-in-out;
+          animation: wave 10s infinite ease-in-out;
+  content: "";
+  height: 20vh;
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.screen:after {
+  background-image: linear-gradient(transparent, transparent 3px, #222);
+  background-size: 4px 4px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+p:last-child:after {
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+  content: "_";
+}
+
+@-webkit-keyframes colorPulse {
+  0%, 100% {
+    color: #0c0;
+  }
+  48%, 52% {
+    color: #090;
+  }
+  50% {
+    color: #060;
+  }
+}
+
+@keyframes colorPulse {
+  0%, 100% {
+    color: #0c0;
+  }
+  48%, 52% {
+    color: #090;
+  }
+  50% {
+    color: #060;
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-box-shadow: 0 -10vh 20vh #0c0;
+            box-shadow: 0 -10vh 20vh #0c0;
+    top: -100vh;
+  }
+  48%, 52% {
+    -webkit-box-shadow: 0 -10vh 20vh #090;
+            box-shadow: 0 -10vh 20vh #090;
+  }
+  50% {
+    -webkit-box-shadow: 0 -10vh 20vh #060;
+            box-shadow: 0 -10vh 20vh #060;
+  }
+  100% {
+    -webkit-box-shadow: 0 -10vh 20vh #0c0;
+            box-shadow: 0 -10vh 20vh #0c0;
+    top: 200vh;
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-box-shadow: 0 -10vh 20vh #0c0;
+            box-shadow: 0 -10vh 20vh #0c0;
+    top: -100vh;
+  }
+  48%, 52% {
+    -webkit-box-shadow: 0 -10vh 20vh #090;
+            box-shadow: 0 -10vh 20vh #090;
+  }
+  50% {
+    -webkit-box-shadow: 0 -10vh 20vh #060;
+            box-shadow: 0 -10vh 20vh #060;
+  }
+  100% {
+    -webkit-box-shadow: 0 -10vh 20vh #0c0;
+            box-shadow: 0 -10vh 20vh #0c0;
+    top: 200vh;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
