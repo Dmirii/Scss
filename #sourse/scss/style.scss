@@ -4,27 +4,36 @@
 /*Переменные*/
 $fz1: 20px;
 
+/*Шаблоны */
+%dl{
+    border-bottom: 5px dashed #000;
+}
+/*Примеси*/ 
+@mixin fmix($fz,$cl,$bd) {
+    font-size: $fz;
+    color: $cl;
+    border: $bd solid black ;
+    
+}
+
 .body-div{
+    @include fmix(20px,red,1px)
     background-color: gray;
     width: 100%;
-    font-size: $fz1;     
-    color: white;
-    border: red 1px solid;
+ 
     .level2{       
         background-color: green;
-        font-size: $fz1;
-        color:gray;
+    
         .level3{
-            width: 100%;
+            width: 300 / 900 *100%;
             background-color: gray;
-            color: white;
+         
         }
     
       
     } 
     &.level3-2{
-        color: red;
-        font-size: $fz1;
+       
     }
    
 }
@@ -36,4 +45,5 @@ $fz1: 20px;
         color: green;
 
     }
+    @extend %dl;
 }
