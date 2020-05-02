@@ -1,76 +1,26 @@
 //*Импорт Обнуление*/
 @import "reset_fp.scss";
 
-// var
-$Color-conteiner:yellow;
-$Color-element:violet;
-$Color-element-content:green;
+
+
+
+ body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
 .wrapper {
-    height: 100%;
-    overflow: hidden;
-    min-height: 100%;
-    padding: 50px;
- }
-
-
-.block { 
-
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
-.block__row {// флекс контейнер
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    
-    
-    border: solid 20px $Color-conteiner;
-    margin: 0px 0px 20px 0px;
- }  
-.block__column {// флекс элемент
-    border: solid 20px $Color-element;
-    flex-grow: 1;
- }
-.block__item { 
-    flex: 1 1 auto;
-    background-color: $Color-element-content;
-    padding: 50px;
-    font-size: 50px;
-    color: white;
-    font-weight: 700;
+
+.container{
+	max-width: 1180px;
+	margin: 0px auto;
 }
-.legend{
-    padding: 4px;
-    border: 1px solid black;
-    background: grey;
-    padding: 0px 0px 5px 10px;
-    font-size: 25px;
-}
-.Color-conteiner {
-    color: $Color-conteiner;
-    display: inline;
- }
-.Color-element {
-    color: $Color-element;
-    display: inline;
- }
-.Color-element-content {
-    color: $Color-element-content;
-    display: inline;
- }
 
- .block__column_1{
 
-     //align-self: flex-start;
-     order: 1;
- }
- .block__column_2{
-     order: 2;
-     //align-self: flex-start;
-
- }
- .block__column_3{
-    order: 3;
-    //align-self: flex-start;
- }
+.header { }
+.content { }
+.footer { }
