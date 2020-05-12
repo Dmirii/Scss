@@ -159,19 +159,26 @@ h2.promo__title{
 	&__wrapper{
 		margin-top: 45px;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 	
-		.wrapper__item{
-			
+		.wrapper__item{			
 			display: flex;
 			flex-direction: column;
 			margin: 0 auto;
 			max-width: 339px;
 		}
 		.wrapper_desc{
-			margin-top: 33px;
+			color: #4a4a4a;
+			font-family: Roboto;
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 21px;
 			margin: 33px 1px 0px 1px;
+			text-align: center;
 			
+		}
+		.wrapper__img{
+			width: 100%;
 		}
 	}
 }

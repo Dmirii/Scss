@@ -254,9 +254,9 @@ h2.promo__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .waiting__wrapper .wrapper__item {
@@ -272,7 +272,16 @@ h2.promo__title {
 }
 
 .waiting__wrapper .wrapper_desc {
-  margin-top: 33px;
+  color: #4a4a4a;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
   margin: 33px 1px 0px 1px;
+  text-align: center;
+}
+
+.waiting__wrapper .wrapper__img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
