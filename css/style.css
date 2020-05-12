@@ -96,6 +96,7 @@ body {
 .container {
   max-width: 1140px;
   margin: 0px auto;
+  position: relative;
 }
 
 h1 {
@@ -107,7 +108,7 @@ h2.promo__title {
 }
 
 .promo {
-  height: 800px;
+  min-height: 800px;
   background: url(../img/bg/header_bg.png) center center;
   background-size: cover;
   padding: 39px 0px 62px 0px;
@@ -217,7 +218,7 @@ h2.promo__title {
 
 .waiting {
   background: #efefef;
-  height: 604px;
+  min-height: 604px;
   padding: 85px 0 75px 0;
 }
 
@@ -283,5 +284,38 @@ h2.promo__title {
 
 .waiting__wrapper .wrapper__img {
   width: 100%;
+}
+
+.whatis {
+  min-height: 550px;
+  padding: 102px 0 107px 0;
+}
+
+.whatis__titel {
+  margin-left: 391px;
+  color: #299cbd;
+  font-family: "Roboto - Black";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.whatis__text {
+  margin-left: 391px;
+  margin-top: 25px;
+  width: 750px;
+  color: #4a4a4a;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.whatis .whatis__img {
+  position: absolute;
+  top: -58px;
+  left: -240px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
