@@ -16,11 +16,163 @@
 }
 
 .container{
-	max-width: 1180px;
+	max-width: 1140px;
 	margin: 0px auto;
 }
+h1 {
+	margin-top: 53px;
+}
+h2.promo__title{
+	margin-top: 30px;
 
+}
+.promo{
+	height: 800px;	
+	background: url(../img/bg/header_bg.png) center center;
+	background-size: cover;
+	padding: 39px 0px 62px 0px;
 
-.header { }
-.content { }
+	&__img{
+		display: flex;
+		margin: 0 auto;
+	}
+	&__logotext{
+		text-align: center;
+		margin-top: 14px;
+		color: #ffffff;
+		font-family: Roboto;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	&__title{
+		color: #f9bf3b;
+		font-family: "Roboto - Black";
+		font-size: 41px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__text{
+		margin-top: 23px;
+		padding: 0 13px;
+		text-align: center;
+		color: #ffffff;
+		font-family: Roboto;
+		font-size: 21px;
+		font-weight: 300;
+		line-height: 28px;
+		/* Text style for "Ежедневно" */
+		font-family: "Roboto Light";
+		font-weight: 300;
+	}
+    &__text > span{
+		color: #f9bf3b;
+		font-family: "Roboto - Bold";
+		font-weight: 700;
+	}
+	.simple__bigtext{
+		color: #ffffff;
+		font-family: "Roboto - Black";
+		font-size: 80px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 21px;
+	}
+	&__button{		
+		margin: 73px auto ;
+		/* Style for "Rounded Re" */		
+		width: 313px;
+		height: 72px;
+		box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+		border: 4px solid rgba(0, 0, 0, 0.23);
+		background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+		color: #ffffff;
+		font-family: "Roboto Condensed";
+		padding-top: 20px;
+		font-size: 21px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;	
+	
+	}
+	&__more{
+		margin-top: 73px ;
+		//margin: 0 auto;
+		
+		.more__text{
+			text-align: center;
+			color: #ffffff;
+			font-family: "Roboto - Thin";
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 24px;
+			text-transform: uppercase;
+		}
+		.more__img{
+			display: flex;
+			margin: 0 auto;
+			margin-top: 13px;
+		}
+	
+	}
+}
+
+.waiting{
+	background: #efefef;
+	height: 604px;
+	padding: 85px 0 75px 0;
+	
+
+	&__title{
+		
+		text-align: center;
+		color: #252525;
+		font-family: Roboto;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 12px;
+		text-transform: uppercase;
+	}
+	&__div{
+		margin: 0 auto;
+		margin-top: 18px;
+		width: 217px;
+		height: 4px;
+		background-color: #f9bf3b;
+	}
+	&__text{
+		margin-top: 17px;
+		text-align: center;
+		color: #4a4a4a;
+		font-family: Roboto;
+		font-size: 23px;
+		font-weight: 400;
+		line-height: 20px;
+			}
+	&__wrapper{
+		margin-top: 45px;
+		display: flex;
+		justify-content: center;
+	
+		.wrapper__item{
+			
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto;
+			max-width: 339px;
+		}
+		.wrapper_desc{
+			margin-top: 33px;
+			margin: 33px 1px 0px 1px;
+			
+		}
+	}
+}
 .footer { }
