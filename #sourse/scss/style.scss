@@ -2,14 +2,7 @@
 @import "reset_fp.scss";
 
 //*Импорт адаптивный шрифт*/
-<<<<<<< HEAD
-=======
-//@include adaptiv-font(ширина макета,шрифт макета,шрифт на мобилке);
->>>>>>> 42aaec561b77729a6fce6c3a559a0862eb951894
 @import "adfont.scss";
-
-
-
 
 
  body{
@@ -37,7 +30,7 @@ h1 {
 h2.promo__title{
 	margin-top: 30px;
 
-}
+}	
 
 .promo{
 	min-height: 800px;	
@@ -67,7 +60,7 @@ h2.promo__title{
 		line-height: 24px;
 		text-transform: uppercase;
 		text-align: center;
-		@include adaptiv-font(1140,41,24);
+		@include adaptiv-font(1140,40,24);
 	}
 	&__text{
 		margin-top: 23px;
