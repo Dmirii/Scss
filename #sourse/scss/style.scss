@@ -4,31 +4,17 @@
 //*Импорт адаптивный шрифт*/
 @import "adfont.scss";
 
+@import "fonts.scss";
+
 
  body{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-
-.wrapper {
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-}
-
 .container{
 	max-width: 1180px;
+	max-width: 1140px;
 	margin: 0px auto;
-<<<<<<< HEAD
-}
-
-
-.header { }
-.content { }
-.footer { }
-=======
 	position: relative;
-	
 }
 
 h1 {
@@ -38,7 +24,7 @@ h1 {
 h2.promo__title{
 	margin-top: 30px;
 
-}	
+}
 
 .promo{
 	min-height: 800px;	
@@ -68,7 +54,7 @@ h2.promo__title{
 		line-height: 24px;
 		text-transform: uppercase;
 		text-align: center;
-		@include adaptiv-font(1140,40,24);
+		@include adaptiv-font(1140,41,24);
 	}
 	&__text{
 		margin-top: 23px;
@@ -370,4 +356,3 @@ h2.promo__title{
 		text-align: center;
 	}
  }
->>>>>>> 4537aa558e779424971b7bb9cd762b8f8d78ba98
