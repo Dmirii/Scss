@@ -1,6 +1,10 @@
 //*Импорт Обнуление*/
 @import "reset_fp.scss";
 
+//*Импорт адаптивный шрифт*/
+@import "adfont.scss";
+
+
 
 
 
@@ -19,6 +23,7 @@
 	max-width: 1140px;
 	margin: 0px auto;
 	position: relative;
+	
 }
 
 h1 {
@@ -53,11 +58,12 @@ h2.promo__title{
 	&__title{
 		color: #f9bf3b;
 		font-family: "Roboto - Black";
-		font-size: 41px;
+		//font-size: 41px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
 		text-align: center;
+		@include adaptiv-font(1140,41,24);
 	}
 	&__text{
 		margin-top: 23px;
@@ -86,7 +92,8 @@ h2.promo__title{
 		text-align: center;
 		margin-top: 21px;
 	}
-	&__button{		
+	&__button{	
+		
 		margin: 73px auto ;
 		/* Style for "Rounded Re" */		
 		width: 313px;
@@ -97,19 +104,22 @@ h2.promo__title{
 		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
 		color: #ffffff;
 		font-family: "Roboto Condensed";
-		padding-top: 20px;
+		//padding-top: 20px;
 		font-size: 21px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
-		text-align: center;
-		cursor: pointer;	
+		display: flex !important;
+		justify-content: center;
+		text-align: center !important;
+		cursor: pointer;
+		vertical-align: middle;	
+		
 	
 	}
 	&__more{
 		margin-top: 73px ;
-		//margin: 0 auto;
-		
+				
 		.more__text{
 			text-align: center;
 			color: #ffffff;
@@ -189,8 +199,7 @@ h2.promo__title{
 
 .whatis {
 	 min-height: 550px;
-	 padding: 102px 0 107px 0;
-	 
+	 padding: 102px 0 107px 0;	 
 
 	&__titel {
 		margin-left:391px;
@@ -263,4 +272,96 @@ h2.promo__title{
 
 }
 
-.footer { }
+.gift{
+	padding: 86px 0px 87px 0px;
+	background-color: #efefef;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__img{
+		display: flex;
+		justify-content: center;		
+		margin: 0 auto;
+	}
+
+	&__text{
+		margin-top: 42px;
+		max-width: 1131px;
+		text-align: center;
+		color: #252525;
+		font-family: Roboto;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 43px;
+	}
+}
+
+.webinar{
+	padding: 82px 0px 64px 0px;
+	height: 519px;
+
+	&__img{
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	&__text1{
+		margin-top: 37px;
+		color: #252525;
+		font-family: Roboto;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 12px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__title{
+		text-align: center;
+		margin-top: 30px;
+		color: #299cbd;
+		font-family: "Roboto - Black";
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 12px;
+		text-transform: uppercase;
+	}
+
+	&__stext{
+		text-align: center;
+		margin-top: 25px;
+		color: #4a4a4a;
+		font-family: Roboto;
+		font-size: 23px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+}
+
+
+
+.footer {
+	padding: 61px 0px 69px 0px;
+	height: 166px;
+	background-color: #1a1a1a;
+	display: flex;
+	justify-content: center;
+	color: #888888;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 21px;
+	
+	a{
+		color: #888888;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 21px;
+	text-decoration: underline;
+	}
+	&__phone{
+		text-align: center;
+	}
+ }

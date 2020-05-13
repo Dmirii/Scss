@@ -135,11 +135,22 @@ h2.promo__title {
 .promo__title {
   color: #f9bf3b;
   font-family: "Roboto - Black";
-  font-size: 41px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .promo__title {
+    font-size: calc(24px + 28.9 *((110vw - 320vw)/ 1140));
+  }
+}
+
+@media (min-width: 767px) {
+  .promo__title {
+    font-size: calc(24px + 17 * (100vw /  1140  ));
+  }
 }
 
 .promo__text {
@@ -185,13 +196,19 @@ h2.promo__title {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
   color: #ffffff;
   font-family: "Roboto Condensed";
-  padding-top: 20px;
   font-size: 21px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  text-align: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center !important;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .promo__more {
@@ -374,5 +391,118 @@ h2.promo__title {
   font-size: 17px;
   font-weight: 300;
   line-height: 20px;
+}
+
+.gift {
+  padding: 86px 0px 87px 0px;
+  background-color: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gift__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.gift__text {
+  margin-top: 42px;
+  max-width: 1131px;
+  text-align: center;
+  color: #252525;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.webinar {
+  padding: 82px 0px 64px 0px;
+  height: 519px;
+}
+
+.webinar__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.webinar__text1 {
+  margin-top: 37px;
+  color: #252525;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.webinar__title {
+  text-align: center;
+  margin-top: 30px;
+  color: #299cbd;
+  font-family: "Roboto - Black";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.webinar__stext {
+  text-align: center;
+  margin-top: 25px;
+  color: #4a4a4a;
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer {
+  padding: 61px 0px 69px 0px;
+  height: 166px;
+  background-color: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #888888;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.footer a {
+  color: #888888;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+  text-decoration: underline;
+}
+
+.footer__phone {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
