@@ -84,8 +84,7 @@ h2.promo__title{
 		text-align: center;
 		margin-top: 21px;
 	}
-	&__button{	
-		
+	&__button{			
 		margin: 73px auto ;
 		text-align: center !important;
 		cursor: pointer;				
@@ -111,7 +110,10 @@ h2.promo__title{
 		background-image: linear-gradient(to top, white 0%, #3ab6da 100%);
 		
 	}
-
+    .promo__center{
+		display: flex;
+		justify-content: center;
+	}
 	&__more{
 		margin-top: 73px ;
 				
