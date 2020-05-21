@@ -4,6 +4,7 @@
 //*Импорт адаптивный шрифт*/
 @import "adfont.scss";
 
+//*Импорт  шрифт*/
 @import "fonts.scss";
 
 html{
@@ -37,53 +38,49 @@ h2.promo__title{
 		display: flex;
 		margin: 0 auto;
 	}
+
 	&__logotext{
 		text-align: center;
 		margin-top: 14px;
-		color: #ffffff;
-	
+		color: #ffffff;	
 		font-size: 15px;
 		font-weight: 500;
 		line-height: 24px;
 		text-transform: uppercase;
 	}
+
 	&__title{
 		color: #f9bf3b;
-		
-		//font-size: 41px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
 		text-align: center;
 		@include adaptiv-font(1140,41,24);
 	}
+
 	&__text{
 		margin-top: 23px;
 		padding: 0 13px;
 		text-align: center;
-		color: #ffffff;
-		
+		color: #ffffff;		
 		font-size: 21px;
 		font-weight: 300;
 		line-height: 28px;
-		/* Text style for "Ежедневно" */
-		
 		font-weight: 300;
 	}
     &__text > span{
-		color: #f9bf3b;
-	
+		color: #f9bf3b;	
 		font-weight: 700;
 	}
 	.simple__bigtext{
-		color: #ffffff;
-	
+		color: #ffffff;	
 		font-size: 80px;
 		font-weight: 400;
 		text-transform: uppercase;
 		text-align: center;
 		margin-top: 21px;
 	}
+
 	&__button{			
 		margin: 73px auto ;
 		text-align: center !important;
@@ -98,7 +95,6 @@ h2.promo__title{
 		text-transform: uppercase;	
 		font-size: 21px;
 		font-weight: 400;
-
 	}
 
 	&__button:hover{
@@ -110,12 +106,14 @@ h2.promo__title{
 		background-image: linear-gradient(to top, white 0%, #3ab6da 100%);
 		
 	}
+
     .promo__center{
 		display: flex;
 		justify-content: center;
 	}
+
 	&__more{
-		margin-top: 73px ;
+	margin-top: 73px ;
 				
 		.more__text{
 			text-align: center;
@@ -138,19 +136,17 @@ h2.promo__title{
 .waiting{
 	background: #efefef;
 	min-height: 604px;
-	padding: 85px 0 75px 0;
-	
+	padding: 85px 0 75px 0;	
 
-	&__title{
-		
+	&__title{		
 		text-align: center;
-		color: #252525;
-	
+		color: #252525;	
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 12px;
 		text-transform: uppercase;
 	}
+
 	&__div{
 		margin: 0 auto;
 		margin-top: 18px;
@@ -158,6 +154,7 @@ h2.promo__title{
 		height: 4px;
 		background-color: #f9bf3b;
 	}
+
 	&__text{
 		margin-top: 17px;
 		text-align: center;
@@ -166,7 +163,8 @@ h2.promo__title{
 		font-size: 23px;
 		font-weight: 400;
 		line-height: 20px;
-			}
+	}
+
 	&__wrapper{
 		margin-top: 45px;
 		display: flex;
@@ -179,8 +177,7 @@ h2.promo__title{
 			max-width: 339px;
 		}
 		.wrapper_desc{
-			color: #4a4a4a;
-		
+			color: #4a4a4a;		
 			font-size: 15px;
 			font-weight: 300;
 			line-height: 21px;
@@ -200,8 +197,7 @@ h2.promo__title{
 
 	&__titel {
 		margin-left:391px;
-		color: #299cbd;
-	
+		color: #299cbd;	
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 12px;
@@ -211,8 +207,7 @@ h2.promo__title{
 		margin-left: 391px;
 		margin-top: 25px;
 		width: 750px;
-		color: #4a4a4a;
-		
+		color: #4a4a4a;		
 		font-size: 17px;
 		font-weight: 300;
 		line-height: 27px;		
@@ -260,8 +255,7 @@ h2.promo__title{
 	.round__desc{
 		text-align: center;
 		margin-top: 25px;	
-		color: #efefef;
-		
+		color: #efefef;		
 		font-size: 17px;
 		font-weight: 300;
 		line-height: 20px;
@@ -286,8 +280,7 @@ h2.promo__title{
 		margin-top: 42px;
 		max-width: 1131px;
 		text-align: center;
-		color: #252525;
-	
+		color: #252525;	
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 43px;
@@ -306,8 +299,7 @@ h2.promo__title{
 
 	&__text1{
 		margin-top: 37px;
-		color: #252525;
-	
+		color: #252525;	
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 12px;
@@ -317,8 +309,7 @@ h2.promo__title{
 	&__title{
 		text-align: center;
 		margin-top: 30px;
-		color: #299cbd;
-		
+		color: #299cbd;		
 		font-size: 36px;
 		font-weight: 400;
 		line-height: 12px;
@@ -328,8 +319,7 @@ h2.promo__title{
 	&__stext{
 		text-align: center;
 		margin-top: 25px;
-		color: #4a4a4a;
-		
+		color: #4a4a4a;		
 		font-size: 23px;
 		font-weight: 400;
 		line-height: 20px;
@@ -345,18 +335,16 @@ h2.promo__title{
 	display: flex;
 	justify-content: center;
 	color: #888888;
-
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 21px;
 	
 	a{
-		color: #888888;
-	
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 21px;
-	text-decoration: underline;
+		color: #888888;	
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 21px;
+		text-decoration: underline;
 	}
 	&__phone{
 		text-align: center;
